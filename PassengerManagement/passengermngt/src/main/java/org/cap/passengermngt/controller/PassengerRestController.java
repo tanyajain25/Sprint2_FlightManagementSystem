@@ -53,29 +53,5 @@ public class PassengerRestController {
 		String message = exception.getMessage();
 		ResponseEntity<String> response = new ResponseEntity<>(message, HttpStatus.NOT_FOUND);
 		return response;
-	}
-//
-//	@GetMapping("/getall")
-//	public ResponseEntity<List<User>> fetchAllUsers() {
-//		List<User> listOfUsers = service.viewAllUsers();
-//		ResponseEntity<List<User>> reponse = new ResponseEntity<List<User>>(listOfUsers, HttpStatus.OK);
-//		return reponse;
-//	}
-//
-//	@DeleteMapping("/deletebyuserid/{userId}")
-//	public ResponseEntity<String> deleteUser(@PathVariable("userId") BigInteger userId) {
-//		service.deleteUser(userId);
-//		String message = "Deleted";
-//		ResponseEntity<String> reponse = new ResponseEntity<String>(message, HttpStatus.OK);
-//		return reponse;
-//	}
-//
-//	@PutMapping("/update")
-//	public ResponseEntity<User> updateUser(@RequestBody UserDto dto) {
-//		User user = convertFromDto(dto);
-//	    user = service.updateUser(user);
-//		ResponseEntity<User> response = new ResponseEntity<>(user, HttpStatus.OK);
-//		return response;
-//	}
-	
+	}	
 }
